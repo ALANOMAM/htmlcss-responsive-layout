@@ -17,3 +17,68 @@ nav .logo,.menu{
     background-color: lightskyblue;
     padding: 10px;
 }
+
+.intro-container{
+    max-width:100% ;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box1-2,.box3-4-5{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+.intro-container .box{
+    height: 300px /*test*/;
+    border-radius: 10px;
+    background-color:rgba(181, 221, 255, 1) ;
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+    .intro-container{
+   
+     background-color: brown;
+    } 
+   
+    .box1-2{
+        max-width: 100%;
+        display: flex; 
+        flex-direction: row;
+        gap: 20px;   
+    }
+
+ .box1-2 .box:nth-child(1){
+    width: calc(100% / 3 *2);
+    height:300px ; /*test*/
+ } 
+
+ .box1-2 .box:nth-child(2){
+    width:calc(100% / 3) ;
+    height:300px ; /*test*/
+ }
+
+ .box3-4-5{
+    max-width: 100%;
+    display: flex; 
+    flex-direction: row;
+    gap:20px;
+ }
+
+ .box3-4-5 .box{
+    width:calc(100% / 3);
+    height:300px ; /*test*/
+ }
+
+}
