@@ -13,9 +13,18 @@ header nav{
     background-color:rgba(0, 132, 253, 1) ;
 }
 
+.nav-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 nav .logo,.menu{
     background-color: lightskyblue;
     padding: 10px;
+}
+
+.list{
+    display: none;
 }
 
 .intro-container{
@@ -47,11 +56,6 @@ nav .logo,.menu{
 
 @media screen and (min-width: 768px){
 
-    .intro-container{
-   
-     background-color: brown;
-    } 
-   
     .box1-2{
         max-width: 100%;
         display: flex; 
@@ -80,5 +84,50 @@ nav .logo,.menu{
     width:calc(100% / 3);
     height:300px ; /*test*/
  }
+
+}
+
+
+@media screen and (min-width: 992px){
+
+  .nav-info{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list{
+    display:flex;
+    align-items: center;
+  }
+
+  .list ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    list-style-type: none;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .intro-container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .box1-2 .box:nth-child(1){
+    display: flex;
+   
+  }
+  
+  .box1-2 .box:nth-child(1) div{
+    width: calc(100% / 2);
+  }
+  
 
 }
