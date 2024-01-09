@@ -21,9 +21,19 @@ header nav{
     display: flex;
     justify-content: space-between;
 }
-nav .logo,.menu{
+ /*nav .logo,.menu{
     background-color: lightskyblue;
     padding: 10px;
+}*/
+
+nav .menu{
+   color: white; 
+   display: flex;
+   align-items: center;
+}
+
+.menu i{
+    font-size: 40px;
 }
 
 .list{
@@ -216,12 +226,21 @@ footer section{
     align-items: center;
     gap:20px;
     list-style-type: none;
+    color: white;
   }
 
-  .menu{
+  .list button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color:white;
+  }
+
+
+  .menu i{
     display: none;
   }
 
+  
   .intro-container{
     max-width: 1000px;
     margin-left: auto;
