@@ -6,6 +6,9 @@ border: 1px solid black;
 }
 
 
+
+
+/*HEADER START*/
 header nav{
     padding: 20px;
     display: flex;
@@ -42,16 +45,18 @@ nav .logo,.menu{
 
 }
 
-
-
 .intro-container .box{
     height: 300px /*test*/;
     border-radius: 10px;
     background-color:rgba(181, 221, 255, 1) ;
 }
+/*HEADER END*/
 
 
+
+/*MAIN START*/
 main section:nth-child(1){
+    padding-top:40px;
     background-color:rgba(151, 146, 228, 1) ;
     padding-bottom: 40px;
 }
@@ -68,7 +73,8 @@ main section:nth-child(1){
 }
 
 main section:nth-child(2){
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .container2 div{
     height: 300px; /*test*/
@@ -76,6 +82,7 @@ main section:nth-child(2){
 
 main section:nth-child(3){
     padding-bottom: 40px;
+    padding-top: 40px;
     background-color: rgba(151, 146, 228, 1);
 }
 
@@ -89,6 +96,7 @@ main section:nth-child(3){
 }
 
 main section:nth-child(4){
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -107,9 +115,15 @@ main section:nth-child(5){
     background-color: lightblue;
 }
 
+/*MAIN END*/
+
+
+
 *footer{
     border:red 1px solid;
 }
+
+/*FOOTER START*/
 
 footer section{
     background-color: rgba(51, 51, 51, 1);
@@ -122,8 +136,15 @@ footer section{
     background-color: lightblue;
 }
 
-@media screen and (min-width: 768px){
+/*FOOTER END*/
 
+
+/* ------------------- */
+/*MEDIA QUERY SECTION*/
+/* ------------------- */
+
+@media screen and (min-width: 768px){
+    /*HEADER MEADIA START*/
     .box1-2{
         max-width: 100%;
         display: flex; 
@@ -152,8 +173,9 @@ footer section{
     width:calc(100% / 3);
     height:300px ; /*test*/
  }
+ /*HEADER MEDIA END*/
 
-
+ /*MAIN MEDIA START*/
  .cards {
     display: flex;
     flex-direction: row;
@@ -171,11 +193,13 @@ footer section{
  .container4 div{
     width: calc(100% / 2);
  }
+ /*MAIN MEDIA END*/
 }
 
 
 @media screen and (min-width: 992px){
 
+    /*HEADER MEDIA START*/
   .nav-info{
     max-width: 1000px;
     margin-left: auto;
@@ -214,8 +238,9 @@ footer section{
   .box1-2 .box:nth-child(1) div{
     width: calc(100% / 2);
   }
-  
+  /*HEADER MEDIA END*/
 
+  /*MAIN MEDIA START*/
   .container1{
     max-width: 1000px;
     margin-left: auto;
@@ -227,7 +252,6 @@ footer section{
     width: calc(100% / 2);
   }
 
-
  .container2,.container3,.container4,.container5,.footer-container{
     max-width: 1000px;
     margin-left: auto;
@@ -237,4 +261,6 @@ footer section{
  .cards div{
     width: calc(100% / 3);
  }
+ /*MAIN MEDIA END*/
+
 }
