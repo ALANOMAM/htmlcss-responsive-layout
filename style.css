@@ -1,0 +1,19 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 1px solid black;
+}
+
+
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(0, 132, 253, 1) ;
+}
+
+nav .logo,.menu{
+    background-color: lightskyblue;
+    padding: 10px;
+}
