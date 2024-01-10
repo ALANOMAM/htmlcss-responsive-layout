@@ -2,9 +2,12 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-border: 1px solid black;
+/*border: 1px solid black;*/
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 
 
 
@@ -34,6 +37,7 @@ nav .menu{
 
 .list{
     display: none;
+    font-size: 22px;
 }
 
 .intro-container{
@@ -42,13 +46,13 @@ nav .menu{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 22px;
 }
 
 .box1-2,.box3-4-5{
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .intro-container .box{
@@ -69,7 +73,6 @@ nav .menu{
     margin-top: 20px;
     color:rgba(28, 137, 230, 1) ;
 }
-
 
 .box1-2 .box:nth-child(2),.box3-4-5 .box{
     display: flex;
@@ -94,7 +97,6 @@ nav .menu{
     color: white;
     background-color:rgba(0, 132, 253, 1) ;
 }
-
 
 .box button i{
 margin: 0 10px;
@@ -123,20 +125,23 @@ font-size: 20px;
 
 
 /*MAIN START*/
-main section:nth-child(1){
-    padding-top:40px;
-    background-color:rgba(151, 146, 228, 1) ;
-    padding-bottom: 40px;
-}
+
 
 .container1,.container2,.container3,.container4,.container5,.footer-container{
   max-width:calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
+  font-size: 22px;
  
 }
- 
 
+/*SEZIONE 1 DEL MAIN START*/
+main section:nth-child(1){
+    padding-top:40px;
+    background-color:rgba(151, 146, 228, 1) ;
+    padding-bottom: 40px;
+}
+ 
 .container1 img{
 width: 300px;
 height: auto;
@@ -157,7 +162,6 @@ height: auto;
     margin-top: 20px;
     border-radius: 40px;
     background-color:rgba(255, 255, 255, 1) ;
-  
 }
 
 .container1 div:nth-child(2) p{
@@ -172,6 +176,7 @@ height: auto;
     background-color:rgba(151, 146, 228, 1) ; 
 }
 
+/*SEZIONE 2 DEL MAIN START*/
 main section:nth-child(2){
     padding-top: 40px;
     padding-bottom: 60px;
@@ -182,6 +187,7 @@ main section:nth-child(2){
     flex-direction: column;
     gap:40px;
 }
+
 .container2 div:first-child{
     display: flex;
     flex-direction: column;
@@ -223,13 +229,14 @@ width: 200px;
 height: 200px;
 border-radius: 100%;
 }
+
 .container2 .image img,.container4 .image img{
     width:100%;
    height:100%;
    border-radius: 100%;
 }
 
-
+/*SEZIONE 3 DEL MAIN START*/
 main section:nth-child(3){
     padding-bottom: 40px;
     padding-top: 40px;
@@ -245,7 +252,6 @@ text-align: center;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-   /* gap: 10px;*/
 }
 
 .cards .card div{
@@ -268,7 +274,7 @@ text-align: center;
 }
 
 .cards strong{
-font-size: 30px;
+font-size: 50px;
 }
 
 .cards strong,span{
@@ -282,6 +288,7 @@ background-color:rgba(151, 146, 228, 1) ;
 color:white;
 }
 
+/*SEZIONE 4 DEL MAIN START*/
 main section:nth-child(4){
     padding-top: 40px;
     padding-bottom: 40px;
@@ -331,7 +338,7 @@ color:rgba(151, 146, 228, 1) ;
     color: white;
 }
 
-
+/*SEZIONE 5 DEL MAIN START*/
 main section:nth-child(5){
     padding-top: 40px;
     padding-bottom: 40px;
@@ -351,6 +358,7 @@ main section:nth-child(5){
     background: white;
     color:rgba(151, 146, 228, 1) ;
 }
+
 .container5 p:nth-child(1), p:nth-child(4), p:nth-child(6) {
     color: white;
 }
@@ -363,6 +371,7 @@ main section:nth-child(5){
 font-size: 30px;   
 color: white;
 }
+
 .container5 p:nth-child(3){
     font-size: 40px;
     color:rgba(248, 194, 101, 1) ;
@@ -370,11 +379,6 @@ color: white;
 
 /*MAIN END*/
 
-
-
-*footer{
-    border:red 1px solid;
-}
 
 /*FOOTER START*/
 
@@ -412,8 +416,7 @@ color:white;
     }
 
  .box1-2 .box:nth-child(1){
-    width: calc(100% / 3 *2);
-    
+    width: calc(100% / 3 *2); 
  } 
 
  .box1-2 .box:nth-child(2){
@@ -446,7 +449,6 @@ color:white;
 
  .box3-4-5 .box{
     width:calc(100% / 3);
-
  }
  /*HEADER MEDIA END*/
 
@@ -486,7 +488,6 @@ width:70%;
     text-align: start;
 }
 
-
  /*MAIN MEDIA END*/
 }
 
@@ -519,12 +520,10 @@ width:70%;
     background-color:white;
   }
 
-
   .menu i{
     display: none;
   }
 
-  
   .intro-container{
     max-width: 1000px;
     margin-left: auto;
@@ -537,7 +536,6 @@ width:70%;
     display: flex;
     flex-direction: row;
     align-items: center;
-   
   }
 
   .box1-2 .box:nth-child(1){
@@ -546,7 +544,7 @@ width:70%;
 
   .box1-2 .box:nth-child(1) div:nth-child(2){
     position: absolute;
-    top:100px;
+    top:285px;
     left:400px;
   }
   
