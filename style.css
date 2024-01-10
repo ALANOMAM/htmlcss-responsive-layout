@@ -75,7 +75,6 @@ nav .menu{
 }
 
 
-
 .box1-2 .box:nth-child(2),.box3-4-5 .box{
     display: flex;
     flex-direction: column;
@@ -228,13 +227,29 @@ footer section{
 
  .box1-2 .box:nth-child(1){
     width: calc(100% / 3 *2);
-    height:300px ; /*test*/
+    
  } 
 
  .box1-2 .box:nth-child(2){
     width:calc(100% / 3) ;
-    height:300px ; /*test*/
  }
+
+ .box img{
+    width: 200px;
+    height: auto;
+}
+
+.box1-2 .box:nth-child(1){
+    align-items: flex-start;
+}
+
+.box1-2 .box:nth-child(1) div:nth-child(1){
+    align-items: flex-start;
+}
+
+.box1-2 .box:nth-child(1) div:nth-child(1) p{
+    text-align: start;
+}
 
  .box3-4-5{
     max-width: 100%;
@@ -245,7 +260,7 @@ footer section{
 
  .box3-4-5 .box{
     width:calc(100% / 3);
-    height:300px ; /*test*/
+
  }
  /*HEADER MEDIA END*/
 
@@ -315,7 +330,19 @@ footer section{
 
   .box1-2 .box:nth-child(1){
     display: flex;
+    flex-direction: row;
+    align-items: center;
    
+  }
+
+  .box1-2 .box:nth-child(1){
+    position: relative;
+  }
+
+  .box1-2 .box:nth-child(1) div:nth-child(2){
+    position: absolute;
+    top:100px;
+    left:400px;
   }
   
   .box1-2 .box:nth-child(1) div{
