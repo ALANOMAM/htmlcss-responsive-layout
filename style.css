@@ -385,8 +385,14 @@ footer section{
 }
 
 .footer-container{
-    height: 300px; /*test*/
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+color:white;
+}
+
+.footer-container p{
+    text-align: center;
 }
 
 /*FOOTER END*/
