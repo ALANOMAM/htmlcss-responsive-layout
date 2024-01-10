@@ -21,10 +21,6 @@ header nav{
     display: flex;
     justify-content: space-between;
 }
- /*nav .logo,.menu{
-    background-color: lightskyblue;
-    padding: 10px;
-}*/
 
 nav .menu{
    color: white; 
@@ -141,8 +137,39 @@ main section:nth-child(1){
 }
  
 
-.container1 div{
-    height: 300px; /*test*/
+.container1 img{
+width: 300px;
+height: auto;
+}
+
+.container1  div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.container1 div:nth-child(1){
+    color:white;
+}
+
+.container1 div:nth-child(2){
+    margin-top: 20px;
+    border-radius: 40px;
+    background-color:rgba(255, 255, 255, 1) ;
+  
+}
+
+.container1 div:nth-child(2) p{
+    text-align: center;
+}
+
+.container1 div:nth-child(2) i{
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color:rgba(151, 146, 228, 1) ; ;
 }
 
 main section:nth-child(2){
@@ -356,6 +383,8 @@ footer section{
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    align-items: center;
+    gap:30px;
   }
 
   .container1 div{
